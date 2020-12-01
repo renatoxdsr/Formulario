@@ -1,0 +1,86 @@
+body {
+  background-color: #80deea;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: #fff;
+  padding: 30px;
+  width: 60%;
+}
+
+main form {
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  grid-template-areas: 
+    "cep cep city state neighborhood"
+    "street street street street number"
+    "placeinfo placeinfo placeinfo placetype placetype"
+    "login login login password password"
+    "send send cleanall cleanall cleanall ";
+  grid-gap: 1rem;
+}
+
+main form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+main form .cep {
+  grid-area: cep;
+}
+
+main form .street {
+  grid-area: street;
+}
+
+main form .number {
+  grid-area: number;
+}
+
+main form .neighborhood {
+  grid-area: neighborhood;
+}
+
+main form .state {
+  grid-area: state;
+}
+
+main form .city {
+  grid-area: city;
+}
+
+main form .placeinfo {
+  grid-area: placeinfo;
+}
+
+main form .placetype {
+  grid-area: placetype;
+
+}
+
+main form .login{
+  grid-area: login;
+}
+
+main form .password {
+  grid-area: password;
+}
+      
+
+main form label {
+  font-size: .9rem;
+  font-weight: bold;
+  margin-bottom: .3rem;
+}
+
+main form input {
+  outline: none;
+  height: 1.5rem;
+}
+
+
